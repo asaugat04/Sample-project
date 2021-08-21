@@ -8,6 +8,7 @@ function App() {
 	const [loaded, setLoaded] = useState(false)
 
 	useEffect(() => {
+		//
 		fetch("https://reqres.in/api/users?delay=3")
 			.then(res => res.json())
 			.then(res => {
