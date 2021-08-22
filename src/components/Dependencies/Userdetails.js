@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react"
-//ALSO DElETE THIS IMPORT
-import Image from "./../images/Image.png"
 
 function Userdetails({ match }) {
 	const [data, setdata] = useState()
@@ -16,20 +14,6 @@ function Userdetails({ match }) {
 			})
 			.catch(err => {
 				console.log(err)
-
-				//JUST FOR OFFLINE DEBUGGING PURPOSE START
-				//****************MUST DELETE IT LATER**********************//
-
-				setdata({
-					avatar: Image,
-					id: 2,
-					first_name: "Fname",
-					last_name: "Lname",
-					email: "gmail.email@yahoo.com",
-				})
-				setloaded(true)
-				//****************MUST DELETE IT LATER**********************//
-				//JUST FOR OFFLINE DEBUGGING PURPOSE END
 			})
 	}, [])
 	return (

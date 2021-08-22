@@ -8,7 +8,6 @@ function App() {
 	const [loaded, setLoaded] = useState(false)
 
 	useEffect(() => {
-		//
 		fetch("https://reqres.in/api/users?delay=3")
 			.then(res => res.json())
 			.then(res => {
@@ -17,31 +16,6 @@ function App() {
 			})
 			.catch(err => {
 				console.error(`ERROR:: ${err}`)
-
-				//JUST FOR OFFLINE DEBUGGING PURPOSE START
-				//****************MUST DELETE IT LATER**********************//
-
-				/* setData({
-					data: [
-						{
-							avatar: "google.com",
-							id: 2,
-							first_name: "Fname",
-							last_name: "Lname",
-						},
-						{
-							avatar: "google.com",
-							id: 3,
-							first_name: "Fname2",
-							last_name: "Lname2",
-						},
-					],
-				})
-				setTimeout(() => {
-					setLoaded(true)
-				}, 4000) */
-				//****************MUST DELETE IT LATER**********************//
-				//JUST FOR OFFLINE DEBUGGING PURPOSE END
 			})
 	}, [])
 
