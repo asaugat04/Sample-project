@@ -61,7 +61,7 @@ function Userlist({ users: { data } }) {
 
 	return (
 		<Router>
-			<Route exact path=" " component={Users} />
+			<Route exact path="/" component={Users} />
 			<Route path="/user/:id" component={Userdetails} />
 		</Router>
 	)
