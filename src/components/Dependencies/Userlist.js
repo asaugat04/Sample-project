@@ -1,6 +1,6 @@
 import { useState } from "react"
 import React from "react"
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import { HashRouterRouter as Router, Route, Link } from "react-router-dom"
 
 import Userdetails from "./Userdetails"
 
@@ -61,7 +61,7 @@ function Userlist({ users: { data } }) {
 
 	return (
 		<Router>
-			<Route exact path="/" component={Users} />
+			<Route exact path=" " component={Users} />
 			<Route path="/user/:id" component={Userdetails} />
 		</Router>
 	)
