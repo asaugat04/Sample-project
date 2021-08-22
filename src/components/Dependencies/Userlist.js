@@ -1,6 +1,6 @@
 import { useState } from "react"
 import React from "react"
-import { HashRouterRouter as Router, Route, Link } from "react-router-dom"
+import { HashRouter as Router, Route, Link } from "react-router-dom"
 
 import Userdetails from "./Userdetails"
 
