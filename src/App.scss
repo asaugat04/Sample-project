@@ -152,6 +152,10 @@ select.sort {
 		text-transform: capitalize;
 		color: transparent;
 		font-weight: bolder;
+
+		@media only screen and (max-width: 425px) {
+			text-align: center;
+		}
 	}
 
 	& > .email {
@@ -168,6 +172,9 @@ select.sort {
 			font-size: 2rem;
 			font-weight: bolder;
 			color: #e52f88;
+			@media only screen and (max-width: 425px) {
+				text-align: center;
+			}
 		}
 
 		& > a {
