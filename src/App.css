@@ -201,6 +201,12 @@ select.sort:focus {
   font-weight: bolder;
 }
 
+@media only screen and (max-width: 425px) {
+  .user-wrapper > .name {
+    text-align: center;
+  }
+}
+
 .user-wrapper > .email {
   color: transparent;
   text-align: center;
@@ -216,6 +222,12 @@ select.sort:focus {
   font-size: 2rem;
   font-weight: bolder;
   color: #e52f88;
+}
+
+@media only screen and (max-width: 425px) {
+  .user-wrapper > .email::before {
+    text-align: center;
+  }
 }
 
 .user-wrapper > .email > a {
