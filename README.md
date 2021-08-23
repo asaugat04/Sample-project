@@ -1,4 +1,4 @@
-# Leatning about react router and API
+# Learning about react router and API
 
 This project can be viewed [here](https://asaugat04.github.io/Sample-project/)
 
