@@ -8,7 +8,11 @@ function App() {
 	const [loaded, setLoaded] = useState(false)
 
 	useEffect(() => {
-		fetch("https://reqres.in/api/users?delay=3")
+		fetch("https://reqres.in/api/users?delay=3", {
+		headers: {
+			"x-api-key": "reqres-free-v1"
+		}
+	})
 			.then(res => res.json())
 			.then(res => {
 				setData(res)
